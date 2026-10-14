@@ -135,3 +135,25 @@ Future assistance must remain limited to one isolated subtask at a time. The stu
 
 Actual AI errors or unsuccessful suggestions: Record only when encountered, with diagnostic evidence and the corrected solution. Do not invent failure cases.
 Student responsibility: Understand and explain each change and its Git history.
+### M3.1 — CSP resource inventory and contract
+
+Development URL: http://127.0.0.1:5501/index.html
+
+Source inventory:
+- Stylesheet: ./styles.css
+- Scripts: ./theme.js, ./projects.js, ./contact.js
+- Favicon: data: URL
+- Project links: external GitHub navigation
+- Contact form: frontend validation only; no message submission
+- No inline event handlers observed in the reviewed source
+- Delivered CSP and runtime behavior: Not tested
+
+Planned policy:
+- Allow only required local scripts and styles.
+- Disallow inline event handlers and dynamic code evaluation.
+- Block plugins, unexpected network connections, and form submission.
+- Restrict base URLs and framing.
+- Verify policy enforcement and all existing interactions.
+
+CSP delivery method: Pending hosting selection.
+Status: Planned; not passed.
