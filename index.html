@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Huynh Nhat Huyen's coursework portfolio in web development and UI/UX design.">
+    <title>Huyen's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./theme.js" defer></script>
+    <script src="./projects.js" defer></script>
+    <script src="./contact.js" defer></script>
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="hero">
+        <button id="theme-toggle" type="button" aria-pressed="false" disabled>
+            Dark mode
+        </button>
+        <h1>Huynh Nhat Huyen</h1>
+        <p>IT Student · Web Development · UI/UX Design</p>
+    </header>
+
+    <nav aria-label="Primary">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>
+                I am a student at the University of Information Technology,
+                specializing in Information Systems.
+            </p>
+            <p>
+                I am learning to build accessible websites and exploring UI/UX design.
+                This portfolio presents my coursework and learning progress.
+            </p>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <p>Currently learning:</p>
+            <ul class="badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" tabindex="-1">Projects</h2>
+            <p>Local coursework data with simulated loading.</p>
+
+            <p id="projects-status" role="status" aria-atomic="true">
+                Loading projects...
+            </p>
+
+            <section id="projects-loading" aria-label="Project loading"
+                aria-busy="true">
+                <ul class="project-grid skeleton-list" aria-hidden="true">
+                    <li class="skeleton-card">
+                        <span class="skeleton skeleton-title"></span>
+                        <span class="skeleton"></span>
+                        <span class="skeleton"></span>
+                    </li>
+                    <li class="skeleton-card">
+                        <span class="skeleton skeleton-title"></span>
+                        <span class="skeleton"></span>
+                        <span class="skeleton"></span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="projects-data" class="project-grid"
+                aria-label="Coursework projects" hidden></section>
+
+            <section id="projects-empty" aria-labelledby="empty-heading" hidden>
+                <h3 id="empty-heading">No projects found</h3>
+                <p>The simulated result is empty. Please try again.</p>
+                <button id="empty-retry" type="button">Try again</button>
+            </section>
+
+            <section id="projects-error" aria-labelledby="error-heading" hidden>
+                <h3 id="error-heading">Projects could not be loaded</h3>
+                <p>A simulated loading error occurred.</p>
+                <button id="error-retry" type="button">Retry loading</button>
+            </section>
+
+            <noscript>
+                <p>Enable JavaScript to view the interactive project demonstration.</p>
+            </noscript>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p id="contact-notice">
+                Frontend demonstration only. This form does not send messages.
+            </p>
+
+            <form id="contact-form" aria-describedby="contact-notice">
+                <p class="form-field">
+                    <label for="contact-name">Name (required)</label>
+                    <input id="contact-name" name="name" type="text"
+                        autocomplete="name" maxlength="100" required>
+                </p>
+
+                <p class="form-field">
+                    <label for="contact-email">Email (required)</label>
+                    <input id="contact-email" name="email" type="email"
+                        autocomplete="email" maxlength="254" required>
+                </p>
+
+                <p class="form-field">
+                    <label for="contact-message">Message (required)</label>
+                    <textarea id="contact-message" name="message"
+                        rows="5" maxlength="2000" required></textarea>
+                </p>
+
+                <button id="contact-submit" type="submit" disabled>
+                    Validate form
+                </button>
+
+                <p id="contact-status" role="status" aria-atomic="true"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Huynh Nhat Huyen</p>
+    </footer>
+</body>
+
+</html>
