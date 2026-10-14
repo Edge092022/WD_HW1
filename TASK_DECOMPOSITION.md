@@ -157,3 +157,19 @@ Planned policy:
 
 CSP delivery method: Pending hosting selection.
 Status: Planned; not passed.
+## M4 — Lighthouse Audit
+
+- Tested URL: https://edge092022.github.io/WD_HW1/
+- Test configuration: Chrome Incognito, Navigation mode, Mobile.
+- Performance: 100/100.
+- Accessibility: 100/100.
+- Best Practices: 100/100.
+- SEO: 100/100.
+- Evidence: evidence/m4/edge092022.github.io-20261014T184622.html
+
+The initial local audit scored 71 in Performance and reported
+interference from browser extensions and stored data.
+A subsequent GitHub Pages audit scored 90 in Performance.
+The latest audit achieved 100 in all four categories.
+
+Status: Passed based on the latest saved Lighthouse report.
